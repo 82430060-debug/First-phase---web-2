@@ -1,0 +1,193 @@
+.signup__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #323259;
+}
+ 
+/* the popup itself */
+.signup {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 36px 36px;
+  background: #f0f4fa;
+  border-radius: 28px;
+  font-family: "Noto Sans", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #2d2d5a;
+  box-sizing: border-box;
+}
+ 
+.signup *,
+.signup *::before,
+.signup *::after {
+  box-sizing: border-box;
+}
+ 
+/* round X button, top right */
+.signup__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1;
+  color: #2d2d5a;
+  background: #e0e0ee;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+ 
+.signup__close,
+.signup__close:link,
+.signup__close:visited,
+.signup__close:hover,
+.signup__close:active {
+  color: #2d2d5a;
+  text-decoration: none;
+}
+ 
+.signup__close:hover {
+  background: #d3d3e6;
+}
+ 
+.signup__title {
+  margin: 0 0 8px;
+  font-family: "Space Grotesk", "Noto Sans", system-ui, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #2d2d5a;
+}
+ 
+.signup__subtitle {
+  margin: 0 0 26px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2d2d5a;
+}
+ 
+/* ---------- form ---------- */
+ 
+.signup__form {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.signup__label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2d2d5a;
+}
+ 
+.signup__field {
+  margin-bottom: 18px;
+}
+ 
+.signup__input {
+  display: block;
+  width: 100%;
+  height: 44px;
+  padding: 0 20px;
+  font: inherit;
+  font-size: 14px;
+  color: #2d2d5a;
+  background: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+.signup__input::placeholder {
+  color: #2d2d5a;
+  opacity: 0.6;
+}
+ 
+.signup__input:focus {
+  border-color: #5b46d9;
+  box-shadow: 0 0 0 3px rgba(91, 70, 217, 0.18);
+}
+ 
+/* browser autofill background */
+.signup__input:-webkit-autofill,
+.signup__input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 40px #fff inset;
+  -webkit-text-fill-color: #2d2d5a;
+}
+ 
+/* ---------- submit: works for a <button> and for a <Link> ---------- */
+ 
+.signup__submit,
+.signup__submit:link,
+.signup__submit:visited,
+.signup__submit:hover,
+.signup__submit:active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 52px;
+  margin-top: 4px;
+  padding: 0;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #5b46d9;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+ 
+.signup__submit:hover {
+  background: #4d39c4;
+}
+ 
+.signup__submit:active {
+  transform: translateY(1px);
+}
+ 
+/* ---------- message ("This email already exists.") ---------- */
+ 
+.signup__message {
+  margin: 14px 0 0;
+  font-size: 14px;
+  color: #d93b3b;
+}
+ 
+/* an empty message takes no space */
+.signup__message:empty {
+  display: none;
+}
+ 
+/* ---------- mobile ---------- */
+ 
+@media (max-width: 480px) {
+  .signup {
+    padding: 36px 24px 28px;
+    border-radius: 24px;
+  }
+ 
+  .signup__title {
+    font-size: 24px;
+  }
+}
+ 

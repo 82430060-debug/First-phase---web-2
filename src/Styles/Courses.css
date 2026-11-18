@@ -1,0 +1,87 @@
+.page {
+  --card-bg: #ffffff;
+  --card-border: #e5e5e5;
+  --text: #1a1a1a;
+  --text-muted: #6b6b6b;
+  --primary: #6c35ff;
+  --primary-hover: #7d4dff;
+
+  background: #ffffff;
+  color: var(--text);
+  padding: 36px 24px 48px;
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+.page * {
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin: 0 0 28px;
+  letter-spacing: -0.5px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: stretch; /* Makes all cards in a row the exact same height */
+}
+
+/* Added .page prefix to override conflicting global card styles */
+.page .course-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.page .course-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  letter-spacing: -0.3px;
+}
+
+.page .course-card p {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin: 0 0 24px;
+}
+
+.page .btn-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto; /* Pushes the button cleanly to the bottom of every card */
+  width: 100%;
+  height: 50px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none; /* Removes the underline if using <Link> or <a> */
+  font: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.page .btn-start:hover  { background: var(--primary-hover); }
+.page .btn-start:active { transform: scale(0.98); }
+
+@media (max-width: 900px) {
+  .course-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .course-grid { grid-template-columns: 1fr; }
+}

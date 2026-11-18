@@ -1,0 +1,351 @@
+.profile-page {
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    padding: 36px 20px 80px;
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+    color: #3c3c3c;
+}
+
+.profile-container {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.profile-hero {
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-bottom: 5px solid #e5e5e5;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.profile-banner {
+    height: 130px;
+    background: linear-gradient(135deg, #7c3aed 0%, #58cc02 100%);
+    position: relative;
+    z-index: 1;
+}
+
+.profile-hero-body {
+    padding: 16px 28px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-identity {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.profile-avatar {
+    width: 96px;
+    height: 96px;
+    margin-top: -64px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: 800;
+    color: #7c3aed;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    padding-top: 2px;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.profile-username {
+    margin: 2px 0 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #777777;
+}
+
+.profile-joined {
+    font-size: 13px;
+    font-weight: 600;
+    color: #afafaf;
+}
+
+.btn-edit-profile {
+    background: #ffffff;
+    color: #1cb0f6;
+    border: 2px solid #e5e5e5;
+    border-bottom: 4px solid #e5e5e5;
+    border-radius: 14px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.15s ease;
+}
+
+.btn-edit-profile:hover {
+    background-color: #f0f9ff;
+}
+
+.btn-edit-profile:active {
+    transform: translateY(2px);
+    border-bottom-width: 2px;
+}
+
+.section-title {
+    margin: 0 0 14px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #3c3c3c;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.stat-card {
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-bottom: 4px solid #e5e5e5;
+    border-radius: 18px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: transform 0.15s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.stat-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.stat-icon.streak {
+    background: #fff3e0;
+}
+
+.stat-icon.xp {
+    background: #fef9c3;
+}
+
+.stat-icon.league {
+    background: #f3e8ff;
+}
+
+.stat-icon.accuracy {
+    background: #dcfce7;
+}
+
+.stat-value {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1f2937;
+    line-height: 1.2;
+}
+
+.stat-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #777777;
+}
+
+.languages-card {
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-bottom: 5px solid #e5e5e5;
+    border-radius: 22px;
+    padding: 22px 24px;
+}
+
+.language-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 14px;
+    border: 2px solid #f0f0f0;
+    border-radius: 16px;
+}
+
+.language-flag {
+    width: 48px;
+    height: 36px;
+    border-radius: 10px;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.language-details {
+    flex: 1;
+}
+
+.language-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.language-name {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.language-xp {
+    font-size: 13px;
+    font-weight: 800;
+    color: #7c3aed;
+}
+
+.language-bar-track {
+    width: 100%;
+    height: 12px;
+    background: #e5e5e5;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.language-bar-fill {
+    height: 100%;
+    background: #58cc02;
+    border-radius: 999px;
+    transition: width 0.4s ease;
+}
+
+.language-bar-fill.violet {
+    background: #7c3aed;
+}
+
+.language-bar-fill.blue {
+    background: #1cb0f6;
+}
+
+.achievements-card {
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-bottom: 5px solid #e5e5e5;
+    border-radius: 22px;
+    padding: 22px 24px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.achievement-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.achievement-badge {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #ffde59 0%, #ff914d 100%);
+    border-bottom: 4px solid #d97706;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.achievement-info {
+    flex: 1;
+}
+
+.achievement-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+.achievement-desc {
+    font-size: 13px;
+    font-weight: 600;
+    color: #777777;
+    margin-bottom: 8px;
+}
+
+.achievement-progress-track {
+    width: 100%;
+    height: 10px;
+    background: #e5e5e5;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.achievement-progress-fill {
+    height: 100%;
+    background: #ffc800;
+    border-radius: 999px;
+}
+
+@media (max-width: 600px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-hero-body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-edit-profile {
+        width: 100%;
+        text-align: center;
+    }
+}
