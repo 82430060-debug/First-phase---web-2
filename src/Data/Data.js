@@ -1,4 +1,3 @@
-import react from 'react'
 export let users = [
     { email: 'fatimaelmussawi936@gmail.com', password: 'Fatima' }
 ];
